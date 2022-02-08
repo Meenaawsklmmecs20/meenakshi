@@ -1,0 +1,3 @@
+Kilometee=float(input("enter the length in kilimeter")) 
+Centimeter=100000*kilometer;
+Print("%2f kilometer = %2f centimeter", %( kilometer, centimeter) ;
