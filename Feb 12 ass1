@@ -1,0 +1,40 @@
+gee=500
+maggie=500
+chocolate=500
+rice=500
+salt=500
+cname=input(' coustomer name:')
+cnum=int(input('enter customer num:'))
+gpq=int(input('enter no of gee packets:'))
+mpq=int(input('enter no of maggie packets:'))
+cho=int(input('enter no of chocolates:'))
+rpq=int(input('enter no of rice packets:'))
+spq=int(input('enter no of salt packets:'))
+amt=(gee*gpq)+(maggie *mpq)+(chocolate*cho)+(rice*rpq)+(salt*spq) 
+print("amount value",amt)
+if (amt>5000):
+    dis=amt*10/100
+    amt=amt-dis
+elif(amt>3000):
+    tax=amt*0.1
+elif(amt>3000):
+    dis=amt*8/100
+    amt=amt-dis
+elif(amt<3000):
+    tax=amt*0.18
+elif(amt>2000):
+    dis=amt*5/100
+    amt=amt-dis
+elif(amt<3000):
+    tax=amt*0.18
+elif(amt>1000):
+    dis=amt*3/100
+    amt=amt-dis
+elif(amt<3000):
+    tax=amt*0.18
+    
+    print("discont",dis)
+    print("taxs value",tax)
+    print("total amount",amt-dis+tax)
+else:
+    print("invalid ammount")
